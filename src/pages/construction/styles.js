@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerConstruction = styled.div`
-  height: calc(100vh - 56px);
+  height: calc(100vh - 101px);
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@ export const ContainerConstruction = styled.div`
   box-sizing: border-box;
 
   @media (min-width: 768px) {
+  height: calc(100vh - 56px);
     width: 720px;
     padding: 0;
   }
