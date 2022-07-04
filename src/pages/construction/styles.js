@@ -1,7 +1,16 @@
 import styled from "styled-components";
 
+export const TitleDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
 export const ContainerConstruction = styled.div`
-  height: calc(100vh - 101px);
+  height: calc(100vh - 77px);
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
@@ -11,7 +20,8 @@ export const ContainerConstruction = styled.div`
   box-sizing: border-box;
 
   @media (min-width: 768px) {
-  height: calc(100vh - 56px);
+    margin-top: 40px;
+    height: calc(100vh - 96px);
     width: 720px;
     padding: 0;
   }
@@ -44,7 +54,7 @@ export const ContainerImg = styled.div`
 `;
 
 export const ImgConstruction = styled.img`
-  width: 100%;
+  width: 90%;
   margin: auto;
   align-self: center;
   display: none;
@@ -88,11 +98,13 @@ export const DivContents = styled.div`
     font-family: SuiseIntl;
     font-style: normal;
     font-weight: 600;
-    font-size: 31px;
+    font-size: 25px;
     line-height: 32px;
-    margin-bottom: 20px;
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColor};
     text-align: center;
+  }
+  span:last-child {
+    margin-bottom: 20px;
   }
 
   @media (min-width: 768px) {
@@ -101,10 +113,11 @@ export const DivContents = styled.div`
     top: 40%;
 
     span {
+      margin-bottom: 20px;
       font-size: 18px;
     }
   }
-  @media (min-width: 1600px){
+  @media (min-width: 1600px) {
     span {
       margin-bottom: 50px;
     }
@@ -113,8 +126,8 @@ export const DivContents = styled.div`
 
 export const IconA = styled.a`
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 
   img {
     width: 100%;
@@ -127,18 +140,19 @@ export const IconA = styled.a`
 `;
 
 export const ContainerLinks = styled.div`
+  gap: 30px;
   margin-top: 40px;
   display: flex;
-  width: 100%;
   justify-content: space-around;
 
   @media (min-width: 768px) {
+    gap: 0;
     margin-top: 50px;
     width: 35%;
     justify-content: space-between;
   }
-  
-  @media (min-width: 1600px){
+
+  @media (min-width: 1600px) {
     margin-top: 60px;
   }
 `;

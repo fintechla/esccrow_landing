@@ -10,7 +10,7 @@ export const Span = styled.span`
   font-size: 2.5rem;
   line-height: 40px;
   margin-top: -6px;
-  color: white;
+  color: ${({ theme }) => theme.fontColor};
   letter-spacing: -1px;
   font-weight: 600;
   display: none;

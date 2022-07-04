@@ -15,7 +15,7 @@ function Timer() {
   }, []);
 
   const funGetRemainTime = () => {
-    const tiempoObj = getRemainTime("Jun 24 2022 00:00:29 GMT-0500");
+    const tiempoObj = getRemainTime("Jul 22 2022 23:59:59 GMT-0500");
     setDays(tiempoObj.remainDays);
     setHours(tiempoObj.remainHours);
     setMinutes(tiempoObj.remainMinutes);
