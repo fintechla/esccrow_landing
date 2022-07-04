@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Construction from "./pages/construction";
 import { lightTheme, darkTheme } from "./theme";
-import styled, { ThemeProvider } from "styled-components";
-
-const P = styled.p`
-  color: ${({ theme }) => theme.fontColor};
-`;
+import { ThemeProvider } from "styled-components";
 
 function App() {
   const [theme, setTheme] = useState(true);
