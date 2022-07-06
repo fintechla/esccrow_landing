@@ -30,7 +30,7 @@ function Construction({ theme, onChangeTheme }) {
           <DivContents>
             <TitleDiv>
               <span>Our website is </span>
-              <span>under construction</span>
+              <span>coming soon in</span>
             </TitleDiv>
             <Timer />
             <ImgConstructionResponsive src={ImgConstructionResponsiveGeneral} />

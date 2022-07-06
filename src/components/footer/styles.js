@@ -6,6 +6,7 @@ export const ContainerFooter = styled.div`
   display: flex;
   color: #838383;
   justify-content: center;
+  padding-bottom: 60px;
 
   > div {
     width: 100%;
@@ -20,6 +21,7 @@ export const ContainerFooter = styled.div`
     box-sizing: border-box;
     display: flex;
     height: 56px;
+    padding-bottom: 0;
 
     > div {
       display: flex;

@@ -10,7 +10,7 @@ export const TitleDiv = styled.div`
 `;
 
 export const ContainerConstruction = styled.div`
-  height: calc(100vh - 77px);
+  height: calc(100vh - 137px);
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
