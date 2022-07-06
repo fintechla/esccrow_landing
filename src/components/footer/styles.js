@@ -6,7 +6,7 @@ export const ContainerFooter = styled.div`
   display: flex;
   color: #838383;
   justify-content: center;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 
   > div {
     width: 100%;

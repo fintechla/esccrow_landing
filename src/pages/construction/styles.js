@@ -10,7 +10,7 @@ export const TitleDiv = styled.div`
 `;
 
 export const ContainerConstruction = styled.div`
-  height: calc(100vh - 137px);
+  height: calc(100vh - 157px);
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
@@ -68,6 +68,9 @@ export const ImgConstructionResponsive = styled.img`
   /* margin: auto; */
   align-self: center;
   display: block;
+  @media (max-height: 740px) {
+    margin: 20px 0px;
+  }
   @media (min-width: 768px) {
     display: none;
   }
@@ -144,6 +147,10 @@ export const ContainerLinks = styled.div`
   margin-top: 40px;
   display: flex;
   justify-content: space-around;
+
+  @media (max-height: 740px) {
+    margin-top: 0px;
+  }
 
   @media (min-width: 768px) {
     gap: 0;
