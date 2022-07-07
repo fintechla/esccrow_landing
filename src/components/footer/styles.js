@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ContainerFooter = styled.div`
-  background-color: #000000;
+  background-color: ${({ theme }) => theme.backgroundFooter};
   width: 100%;
-  border-top: 0.5px solid #838383;
   display: flex;
   color: #838383;
   justify-content: center;
+  padding-bottom: 80px;
 
   > div {
     width: 100%;
@@ -17,8 +17,11 @@ export const ContainerFooter = styled.div`
   }
 
   @media (min-width: 768px) {
+    border-top: 0.5px solid #838383;
+    box-sizing: border-box;
     display: flex;
     height: 56px;
+    padding-bottom: 0;
 
     > div {
       display: flex;
@@ -48,7 +51,7 @@ export const TermsDiv = styled.div`
   width: 100%;
   justify-content: center;
   display: flex;
-  height: 50px;
+  height: 38px;
   align-items: center;
   span {
     padding: 0 20px;
@@ -67,7 +70,7 @@ export const CopyrightDiv = styled.div`
   width: 100%;
   justify-content: center;
   display: flex;
-  height: 50px;
+  height: 38px;
   align-items: center;
 
   @media (min-width: 768px) {

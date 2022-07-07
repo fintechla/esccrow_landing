@@ -3,10 +3,10 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { ContainerLayout } from "./styles";
 
-function Layout({ children }) {
+function Layout({ children, theme, onChangeTheme }) {
   return (
     <ContainerLayout>
-      <Header />
+      <Header theme={theme} onChangeTheme={onChangeTheme} />
       {children}
       <Footer />
     </ContainerLayout>

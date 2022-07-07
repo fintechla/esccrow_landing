@@ -6,7 +6,7 @@ function Footer() {
     <ContainerFooter>
       <div>
         <CopyrightDiv>
-          <span>© 2022 FintechLab, LLC</span>
+          <span>© 2022 FintechLab US, LLC</span>
         </CopyrightDiv>
 
         <TermsDiv>

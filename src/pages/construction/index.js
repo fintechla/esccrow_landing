@@ -8,33 +8,32 @@ import {
   DivContents,
   IconA,
   ContainerLinks,
+  TitleDiv,
 } from "./styles";
 import LogoTwitter from "../../assets/images/logo-twitter.svg";
 import LogoTelegram from "../../assets/images/logo-telegram.svg";
 import LogoLinkedin from "../../assets/images/logo-linkedIn.svg";
 import LogoDiscord from "../../assets/images/logo-discord.svg";
 import ImgConstructionDark from "../../assets/images/construction-dark.svg";
-import ImgConstructionResponsiveDark from "../../assets/images/construction-dark-responsive.svg";
+import ImgConstructionLight from "../../assets/images/construction-light.svg";
+import ImgConstructionResponsiveGeneral from "../../assets/images/construction-dark-responsive.svg";
 import Timer from "../../components/timer";
 
-function Construction() {
+function Construction({ theme, onChangeTheme }) {
   return (
-    <Layout>
+    <Layout theme={theme} onChangeTheme={onChangeTheme}>
       <ContainerConstruction>
         <ContainerImg>
-          {/* <img src={ImgConstructionDark} style={{ width: "100%" }} /> */}
-
           <ImgConstruction
-            src={ImgConstructionDark} // corregir
-            alt=""
+            src={theme ? ImgConstructionLight : ImgConstructionDark}
           />
           <DivContents>
-            <span>Our website is under construction</span>
+            <TitleDiv>
+              <span>Our website is&nbsp;</span>
+              <span>coming soon in</span>
+            </TitleDiv>
             <Timer />
-            <ImgConstructionResponsive
-              src={ImgConstructionResponsiveDark} // corregir
-              alt=""
-            />
+            <ImgConstructionResponsive src={ImgConstructionResponsiveGeneral} />
             <ContainerLinks>
               <IconA href="https://twitter.com/esccrow" target="_blank">
                 <img src={LogoTwitter} alt="" />
