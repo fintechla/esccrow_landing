@@ -18,9 +18,7 @@ export const ContainerConstruction = styled.div`
   width: 100%;
   padding: 100px 50px 0;
   box-sizing: border-box;
-  @media (max-height: 700px) {
-    height: 460px;
-  }
+
   @media (min-width: 768px) {
     margin-top: 40px;
     height: calc(100vh - 96px);
