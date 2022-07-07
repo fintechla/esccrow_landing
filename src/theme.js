@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components";
+
 export const lightTheme = {
   fontColor: "#1A237E",
   background: "#fff",
@@ -12,3 +14,11 @@ export const darkTheme = {
   backgroundFooter: "#000",
   buttonBackground: "#1240a3",
 };
+
+export const GlobalStyles = createGlobalStyle`
+  body{
+    @media (max-height: 500px) {
+      overflow: scroll;
+    }
+  }
+`;

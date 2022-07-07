@@ -18,7 +18,9 @@ export const ContainerConstruction = styled.div`
   width: 100%;
   padding: 100px 50px 0;
   box-sizing: border-box;
-
+  @media (max-height: 700px) {
+    height: 460px;
+  }
   @media (min-width: 768px) {
     margin-top: 40px;
     height: calc(100vh - 96px);
@@ -107,9 +109,13 @@ export const DivContents = styled.div`
     text-align: center;
   }
   span:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
-
+  @media (max-height: 600px) {
+    span:last-child {
+      margin-bottom: 10px;
+    }
+  }
   @media (min-width: 768px) {
     font-size: 21px;
     position: absolute;
@@ -144,17 +150,17 @@ export const IconA = styled.a`
 
 export const ContainerLinks = styled.div`
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 
-  @media (max-height: 740px) {
+  @media (max-height: 700px) {
     margin-top: 0px;
   }
 
   @media (min-width: 768px) {
     gap: 0;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 35%;
     justify-content: space-between;
   }

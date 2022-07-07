@@ -29,7 +29,7 @@ function Construction({ theme, onChangeTheme }) {
           />
           <DivContents>
             <TitleDiv>
-              <span>Our website is </span>
+              <span>Our website is&nbsp;</span>
               <span>coming soon in</span>
             </TitleDiv>
             <Timer />

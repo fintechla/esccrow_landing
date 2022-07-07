@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Construction from "./pages/construction";
-import { lightTheme, darkTheme } from "./theme";
+import { lightTheme, darkTheme, GlobalStyles } from "./theme";
 import { ThemeProvider } from "styled-components";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme ? lightTheme : darkTheme}>
+      <GlobalStyles />
       <Construction theme={theme} onChangeTheme={() => setTheme(!theme)} />
     </ThemeProvider>
   );
