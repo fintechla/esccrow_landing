@@ -73,6 +73,11 @@ export const CopyrightDiv = styled.div`
   height: 38px;
   align-items: center;
 
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+
   @media (min-width: 768px) {
     background: none;
     justify-content: start;

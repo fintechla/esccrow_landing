@@ -12,7 +12,6 @@ export const Span = styled.span`
   margin-top: -6px;
   color: ${({ theme }) => theme.fontColor};
   letter-spacing: -1px;
-  font-weight: 600;
   display: none;
 
   @media (min-width: 768px) {

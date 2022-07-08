@@ -6,7 +6,12 @@ function Footer() {
     <ContainerFooter>
       <div>
         <CopyrightDiv>
-          <span>© 2022 FintechLab US, LLC</span>
+          <a
+            href="https://fintechlab.la/decentralized-escrow-service-what-is-it-and-how-does-it-work/"
+            target="_blank"
+          >
+            © 2022 FintechLab US, LLC
+          </a>
         </CopyrightDiv>
 
         <TermsDiv>
