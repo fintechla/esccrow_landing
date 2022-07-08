@@ -158,12 +158,12 @@ export const ContainerLinks = styled.div`
 
   @media (min-width: 768px) {
     gap: 0;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 35%;
     justify-content: space-between;
   }
 
   @media (min-width: 1600px) {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 `;

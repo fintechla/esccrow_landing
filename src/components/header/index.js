@@ -9,7 +9,7 @@ function Header({ theme, onChangeTheme }) {
       <nav>
         <Logo />
         <ActionDiv>
-          <AUi href="https://app.testnet.esccrow.finance/">Go to App</AUi>
+          <AUi href="https://app.esccrow.finance/">Go to App</AUi>
           <ButtonTheme onClick={() => onChangeTheme(!theme)}>
             {theme ? <Moon /> : <Sun />}
           </ButtonTheme>

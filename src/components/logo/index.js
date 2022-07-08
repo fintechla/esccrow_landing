@@ -5,7 +5,7 @@ function Logo() {
   return (
     <ContainerLogo>
       <LogoImg />
-      <Span>esccrow</Span>
+      <Span translate="no">esccrow</Span>
     </ContainerLogo>
   );
 }
